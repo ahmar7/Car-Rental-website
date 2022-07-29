@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="">
+            <ul>
+                <li><a href="welcome.html">Welcome</a></li>
+                <li><a href="economy.html">Economy</a></li>
+                <li><a href="sports.html">Sports & Luxury</a></li>
+                <li><a href="all.html">All Cars</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+            
+        </header>
+        <div class="content">
+            <div class="all">
+                <form action="#!" onsubmit="event.preventDefault();" method="post">
+                    <input type="text" id="total" value="0" placeholder="Total"> <br><br>
+                    <input type="submit" onclick="addCart()" value="Add To Cart">
+                </form>
+                <div class="cars">
+                    <div class="car">
+                        <a href="./images/Honda Civic.png"><img src="./images/Honda Civic.png" alt=""></a>
+                        <h3>Honda Civic</h3>
+                        <p>100$ <input type="checkbox" class="checkbox" name="Honda Civic" value="100" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                        
+                    </div>
+                    <div class="car">
+                        <a href="./images/Jeep Cherokee.png"><img src="./images/Jeep Cherokee.png" alt=""></a>
+                        
+                        <h3>Jeep Cherokee</h3>
+                        <p>130$ <input type="checkbox" class="checkbox" name="Jeep Cherokee" value="130" onchange="updatePrice(this)" > <input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Subaru Outback.png"><img src="./images/Subaru Outback.png" alt=""></a>
+                        
+                        <h3>Subaru Outback</h3>
+                        <p>110$ <input type="checkbox" class="checkbox" name="Subaru Outback" value="110" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Toyota_Corolla.png"><img src="./images/Toyota_Corolla.png" alt=""></a>
+                        
+                        <h3>Toyota Corolla</h3>
+                        <p>80$ <input type="checkbox" class="checkbox" name="Toyota Corolla" value="80" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/VW Golf.png"><img src="./images/VW Golf.png" alt=""></a>
+                        <h3>VM Golf</h3>
+                        <p>90$ <input type="checkbox" class="checkbox" name="VM Golf" value="90" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                </div>
+                <div class="cars">
+                    <div class="car">
+                        <a href="./images/Lambo Hurracan.jpg"><img src="./images/Lambo Hurracan.jpg" alt=""></a>
+                        <h3>Lambo Hurracan</h3>
+                        <p>1200$ <input type="checkbox" class="checkbox" name="Lambo Hurracan" value="1200" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Ferrari Pista.jpg"><img src="./images/Ferrari Pista.jpg" alt=""></a>
+                        
+                        <h3>Ferrari Pista</h3>
+                        <p>1750$ <input type="checkbox" class="checkbox" name="Ferrari Pista" value="1750" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Mercedes S-Class.jpg"><img src="./images/Mercedes S-Class.jpg" alt=""></a>
+                        <h3>Mercedes S Class</h3>
+                        <p>800$ <input type="checkbox" class="checkbox" name="Mercedes S Class" value="800" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/RollsRoyce Cullinan.jpg"><img src="./images/RollsRoyce Cullinan.jpg" alt=""></a>
+                        <h3>RollsRoyce Cullinan</h3>
+                        <p>1350$ <input type="checkbox" class="checkbox" name="RollsRoyce Cullinan" value="1350" onchange="updatePrice(this)" ><input type="number" class="qty" min="0" placeholder="Qty" value="0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#!"><img src="./images/fb.png" alt=""></a></li>
+                <li><a href="#!"><img src="./images/insta.png" alt=""></a></li>
+                <li><a href="#!"><img src="./images/twiter.png" alt=""></a></li>
+                <li><a href="#!"><img src="./images/youtube.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div>
+
+<script>
+    var items = [];
+    function updatePrice(elem){
+        //get all input type checkbox
+        items =[];
+        var checkboxes = document.getElementsByClassName("checkbox");
+        var total = 0;
+        for(var i = 0; i < checkboxes.length; i++){
+            if(checkboxes[i].checked){
+                var qty = checkboxes[i].nextElementSibling;
+                var qtyValue = qty.value;
+                total += parseInt(checkboxes[i].value) * parseInt(qtyValue);
+
+                //add to items array
+                var item = {
+                    name: checkboxes[i].name,
+                    price: checkboxes[i].value,
+                    qty: qtyValue
+                }
+                items.push(item);
+            }
+        }
+        document.getElementById("total").value = total;
+    }
+    function addCart(){
+        //check if items array is empty
+        if(items.length == 0){
+            alert("Please select at least one car");
+            return;
+        }else{
+            //add to local storage
+            localStorage.setItem("items", JSON.stringify(items));
+            window.location.href = "checkout.html";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="">
+            <ul>
+                <li><a href="welcome.html">Welcome</a></li>
+                <li><a href="economy.html">Economy</a></li>
+                <li><a href="sports.html">Sports & Luxury</a></li>
+                <li><a href="all.html">All Cars</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+            
+        </header>
+        <div class="content" id="first">
+            <div class="economy">
+                <div class="cars first">
+                    <div onclick="toggleDesc()" class="car">
+                        <img src="./images/Honda Civic.png" alt="">
+                      
+                    </div>
+                    <div onclick="toggleDesc()"  class="car">
+                      <img src="./images/Jeep Cherokee.png" alt="">
+                       
+                    </div>
+                    <div onclick="toggleDesc()"  class="car">
+                        <img src="./images/Subaru Outback.png" alt="">
+                     
+                    </div>
+                    <div onclick="toggleDesc()"  class="car">
+                       <img src="./images/Toyota_Corolla.png" alt="">
+                     
+                    </div>
+                    <div  onclick="toggleDesc()" class="car">
+                   <img src="./images/VW Golf.png" alt="">
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content hidden" id="second">
+            <div class="economy">
+                <div class="cars">
+                    <div class="car">
+                        <a href="./images/Honda Civic.png"><img src="./images/Honda Civic.png" alt=""></a>
+                        <h3>Honda Civic</h3>
+                        <p>
+                            Year: 2022 <br />
+                            Body: Sedan <br />
+                            Horsepower: 180hp <br />
+                            0-60: 6.7s <br />
+                            Price per day: $100 <br /> <br />
+                            <a href="#">Go to top</a><br>
+                        </p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Jeep Cherokee.png"><img src="./images/Jeep Cherokee.png" alt=""></a>
+                        
+                        <h3>Jeep Cherokee</h3>
+                        <p>
+                            Year: 2022 <br />
+                            Body: SUV <br />
+                            Horsepower: 180 <br />
+                            0-60: 7.7s <br />
+                            Price per day: $130 <br /> <br />
+                             <a href="#">Go to top</a><br>
+                        </p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Subaru Outback.png"><img src="./images/Subaru Outback.png" alt=""></a>
+                        
+                        <h3>Subaru Outback</h3>
+                        <p>
+                            Year: 2022 <br />
+                            Body: Wagon <br />
+                            Horsepower: 200hp <br />
+                            0-60: 6.9 <br />
+                            Price per day: $110 <br /> <br />
+                             <a href="#">Go to top</a><br>
+                        </p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/Toyota_Corolla.png"><img src="./images/Toyota_Corolla.png" alt=""></a>
+                        
+                        <h3>Toyota Corolla</h3>
+                        <p>
+                            Year: 2022 <br />
+                            Body: Hatchback <br />
+                            Horsepower: 139hp <br />
+                            0-60: 7.9s <br />
+                            Price per day: $80 <br /> <br />
+                             <a href="#">Go to top</a><br>
+                        </p>
+                    </div>
+                    <div class="car">
+                        <a href="./images/VW Golf.png"><img src="./images/VW Golf.png" alt=""></a>
+                        <h3>VM Golf</h3>
+                        <p>
+                            Year: 2022 <br />
+                            Body: Hatchback <br />
+                            Horsepower: 149hp <br />
+                            0-60: 7.4s <br />
+                            Price per day: $90 <br /> <br />
+                             <a href="#">Go to top</a><br>
+                        </p>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#!"><img src="./images/fb.png" alt=""></a></li>
+                <li><a href="#!"><img src="./images/insta.png" alt=""></a></li>
+                <li><a href="#!"><img src="./images/twiter.png" alt=""></a></li>
+                <li><a href="#!"><img src="./images/youtube.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script>
+    let toggleDesc=()=>{
+        let first = document.getElementById("first")
+        let second = document.getElementById("second")
+
+        first.classList.add("hidden")
+        second.classList.remove("hidden")
+    }
+</script>
+</html>

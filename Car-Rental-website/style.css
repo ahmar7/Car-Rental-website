@@ -1,0 +1,276 @@
+*,
+body {
+  margin: 0px;
+}
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-color: #47444b;
+  padding: 12px;
+  height: 100px;
+  text-align: center;
+}
+header img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 100px;
+}
+header ul {
+  list-style: none;
+  float: right;
+  margin-right: 100px;
+  margin-top: 30px;
+  font-size: 16pt;
+}
+header ul li {
+  display: inline-block;
+  margin: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: rgb(197, 197, 197);
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 900;
+}
+.content {
+  background-image: url("images/back.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login_form {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding-top: 120px;
+}
+.login_form label {
+  font-size: 12pt;
+  font-weight: 900;
+  color: rgb(197, 197, 197);
+}
+.login_form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+  padding-left: 10px;
+}
+.login_form input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(48, 176, 255);
+  background-color: rgb(48, 176, 255);
+  color: rgb(209, 209, 209);
+  font-size: 12pt;
+  font-weight: 900;
+  cursor: pointer;
+}
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: rgb(197, 197, 197);
+  font-weight: 900;
+  text-align: center;
+  padding-top: 100px;
+}
+.welcome h1 {
+  font-size: 40pt;
+  font-weight: 900;
+  font-family: cursive;
+  color: rgb(197, 197, 197);
+}
+.welcome p {
+  font-size: 20pt;
+  font-weight: 900;
+  font-family: cursive;
+  color: rgb(197, 197, 197);
+}
+
+.economy {
+  width: 100%;
+  min-height: 700px;
+}
+.sports {
+  width: 100%;
+  min-height: 500px;
+}
+.all {
+  width: 100%;
+  min-height: 1000px;
+}
+.checkout {
+  width: 100%;
+  min-height: 680px;
+  background-color: rgb(5, 12, 222);
+}
+.checkout table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.checkout table thead {
+  background-color: rgb(5, 12, 222);
+  color: rgb(209, 209, 209);
+  font-size: 12pt;
+  font-weight: 900;
+}
+.checkout table tr th {
+  border: 1px solid rgb(197, 197, 197);
+  padding: 10px;
+  font-size: 12pt;
+  font-weight: 900;
+  color: rgb(197, 197, 197);
+}
+.checkout table tr td {
+  background-color: rgb(5, 12, 222);
+  background-color: rgb(5, 12, 222);
+  border: 1px solid rgb(197, 197, 197);
+  padding: 10px;
+  font-size: 12pt;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.checkout .sections {
+  width: 100%;
+}
+.checkout .sections h2 {
+  font-size: 20pt;
+  font-weight: 900;
+  font-family: cursive;
+  color: rgb(238, 238, 238);
+  text-align: center;
+}
+.checkout .sections .section {
+  width: 45%;
+  float: left;
+  padding: 16px;
+}
+.checkout .sections .section .section_title {
+  font-size: 12pt;
+  font-weight: 900;
+  font-family: cursive;
+  text-align: left;
+  color: rgb(197, 197, 197);
+}
+.checkout .sections form {
+  width: 100%;
+  margin-top: 20px;
+}
+.checkout .sections form label {
+  font-size: 12pt;
+  font-weight: 900;
+  color: rgb(197, 197, 197);
+}
+.checkout .sections form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+  padding-left: 10px;
+}
+.sports form,
+.all form {
+  width: 300px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+.sports form label,
+.all form label {
+  font-size: 20pt;
+  font-weight: 900;
+  color: rgb(197, 197, 197);
+}
+.sports form input,
+.all form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+  padding-left: 10px;
+}
+.cars {
+  width: 100%;
+}
+.cars .car {
+  width: 23%;
+  float: left;
+  margin: 10px;
+  background-color: #47444b;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+.cars .car h3 {
+  font-size: 14pt;
+  font-weight: 900;
+  text-align: center;
+  font-family: cursive;
+  color: rgb(197, 197, 197);
+}
+.cars .car p {
+  font-size: 10pt;
+  font-weight: 900;
+  font-family: cursive;
+  padding: 10px;
+  color: rgb(197, 197, 197);
+}
+.cars .car img {
+  width: 220px;
+  height: 160px;
+  margin: 0 auto;
+  display: block;
+  opacity: 1;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #1fcf1f;
+  color: rgb(209, 209, 209);
+}
+footer {
+  background-color: #47444b;
+  padding: 12px;
+  height: 100px;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  margin-top: 30px;
+}
+footer ul li {
+  display: inline-block;
+  margin: 10px;
+}
+footer ul li a img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Extra */
+.hidden {
+  display: none !important;
+}
+
+.first .car img {
+  width: 283px;
+  height: 237px;
+  margin: 0 auto;
+  display: block;
+  opacity: 1;
+}
+
+.car p a {
+  color: red;
+  text-decoration: none;
+}
