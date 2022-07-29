@@ -108,6 +108,9 @@ header ul li a {
   width: 100%;
   min-height: 1000px;
 }
+.allcar {
+  min-height: 1286px !important;
+}
 .checkout {
   width: 100%;
   min-height: 680px;
