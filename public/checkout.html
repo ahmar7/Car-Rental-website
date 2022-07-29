@@ -21,7 +21,7 @@
             </ul>
             
         </header>
-        <div class="content">
+        <div class="content checkk">
             <div class="checkout">
                 <table id="cart">
                     <thead>
@@ -66,9 +66,9 @@
                         <label for="">* Postal Code</label>
                         <input type="text" name="postal_code" required/>
                         <label for="">* Province</label>
-                        <input type="text" name="province" required/> <br><br>
+                        <input id="pro" type="text" name="province" required/> <br><br>
 
-                        <input type="submit" value="Submit">
+                        <input onclick="alertsub()" type="submit" value="Submit">
                     </div>
                     </form>
                 </div>
@@ -123,16 +123,28 @@
             //create a new cell
             cell = document.createElement('td');
             //create a new text node
-            total = total + (cart[i].price * cart[i].qty);
-            text = document.createTextNode(cart[i].price * cart[i].qty);
+            text = document.createTextNode("Sub total: "+cart[i].price * cart[i].qty);
+            var br = document.createElement("br");
+            text2 = document.createTextNode ("TPS: "+cart[i].price * 0.05);
+            var br2 = document.createElement("br");
+            text3 = document.createTextNode ("TVQ: "+cart[i].price * 0.1);
+            let tsp = (cart[i].price * 0.05)
+            let tvq = (cart[i].price * 0.1)
+            console.log(tsp);
+            total = total + (cart[i].price * cart[i].qty)+tvq+tsp
             //append the text node to the cell
             cell.appendChild(text);
+            cell.appendChild(br);
+            cell.appendChild(text2);
+            cell.appendChild(br2);
+            cell.appendChild(text3);
             //append the cell to the row
             row.appendChild(cell);
             //append the row to the table
             document.getElementById('cart').appendChild(row);
         }
-        //create a new row
+      
+            //create a new row
         var row = document.createElement('tr');
         //create a new cell
         var cell = document.createElement('td');
@@ -170,5 +182,6 @@
 
         document.getElementById('cart').appendChild(row);
     </script>
+    <script src="./app.js"></script>
 </body>
 </html>

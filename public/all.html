@@ -22,12 +22,12 @@
       </header>
       <div class="content">
         <div class="all allcar">
-          <form action="#!" onsubmit="event.preventDefault();" method="post">
+          <form style="visibility: hidden;" action="#!" onsubmit="event.preventDefault();" method="post">
             <input type="text" id="total" value="0" placeholder="Total" />
             <br /><br />
             <input type="submit" onclick="addCart()" value="Add To Cart" />
           </form>
-          <div class="cars">
+          <div class="cars nm">
             <div class="car">
               <a href="./images/Honda Civic.png"
                 ><img src="./images/Honda Civic.png" alt=""
@@ -279,7 +279,14 @@
               /></p>
             </div>
           </div>
+          
         </div>
+        <form  class="forum" action="#!" onsubmit="event.preventDefault();" method="post">
+      <!-- <input type="text" id="total" value="0" placeholder="Total" /> -->
+      <input type="submit" onclick="addCart()" value="Go to invoice" />
+      <br /><br />
+    </form>
+             
       </div>
       <footer>
         <ul>

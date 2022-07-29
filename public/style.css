@@ -13,9 +13,10 @@ header {
   text-align: center;
 }
 header img {
-  width: 100px;
-  height: 100px;
+  width: 122px;
+  height: 128px;
   float: left;
+  margin-top: -10px;
   margin-left: 100px;
 }
 header ul {
@@ -114,15 +115,15 @@ header ul li a {
 .checkout {
   width: 100%;
   min-height: 680px;
-  background-color: rgb(5, 12, 222);
+  background-color: lightgray;
 }
 .checkout table {
   width: 100%;
   border-collapse: collapse;
 }
 .checkout table thead {
-  background-color: rgb(5, 12, 222);
-  color: rgb(209, 209, 209);
+  background-color: lightgray;
+  color: black;
   font-size: 12pt;
   font-weight: 900;
 }
@@ -131,16 +132,16 @@ header ul li a {
   padding: 10px;
   font-size: 12pt;
   font-weight: 900;
-  color: rgb(197, 197, 197);
+  color: black;
 }
 .checkout table tr td {
-  background-color: rgb(5, 12, 222);
-  background-color: rgb(5, 12, 222);
+  background-color: lightgray;
+  background-color: lightgray;
   border: 1px solid rgb(197, 197, 197);
   padding: 10px;
   font-size: 12pt;
   font-weight: 900;
-  color: rgb(255, 255, 255);
+  color: black;
   text-align: center;
 }
 .checkout .sections {
@@ -150,7 +151,7 @@ header ul li a {
   font-size: 20pt;
   font-weight: 900;
   font-family: cursive;
-  color: rgb(238, 238, 238);
+  color: black;
   text-align: center;
 }
 .checkout .sections .section {
@@ -163,7 +164,7 @@ header ul li a {
   font-weight: 900;
   font-family: cursive;
   text-align: left;
-  color: rgb(197, 197, 197);
+  color: black;
 }
 .checkout .sections form {
   width: 100%;
@@ -172,13 +173,13 @@ header ul li a {
 .checkout .sections form label {
   font-size: 12pt;
   font-weight: 900;
-  color: rgb(197, 197, 197);
+  color: black;
 }
 .checkout .sections form input {
   width: 100%;
   height: 30px;
   border-radius: 5px;
-  border: 1px solid rgb(197, 197, 197);
+  border: 1px solid black;
   padding-left: 10px;
 }
 .sports form,
@@ -203,8 +204,33 @@ header ul li a {
   border: 1px solid rgb(197, 197, 197);
   padding-left: 10px;
 }
+.forum,
+.forum {
+  width: 300px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding-top: 0px;
+}
+.forum label,
+.forum label {
+  font-size: 20pt;
+  font-weight: 900;
+  color: rgb(197, 197, 197);
+}
+.forum input,
+.forum input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+  padding-left: 10px;
+}
 .cars {
   width: 100%;
+}
+.nm {
+  margin-top: -100px !important;
 }
 .cars .car {
   width: 23%;
@@ -240,6 +266,16 @@ input[type="submit"],
 input[type="reset"] {
   background-color: #1fcf1f;
   color: rgb(209, 209, 209);
+}
+.checkk input[type="submit"],
+.checkk input[type="reset"] {
+  background-color: beige !important;
+  color: black !important;
+}
+.first,
+.second {
+  display: flex;
+  flex-wrap: wrap;
 }
 footer {
   background-color: #47444b;
@@ -279,4 +315,7 @@ footer ul li a img {
 }
 .hide_desc {
   display: none;
+}
+.start {
+  margin-bottom: 200px;
 }

@@ -56,3 +56,11 @@ function searchFilter() {
   }
 }
 //    Sports page code
+// Checkout page
+let alertsub = () => {
+  let pro = document.getElementById("pro");
+  if (pro.value == "") {
+  } else {
+    alert("Thankyou for purchasing");
+  }
+};
