@@ -274,3 +274,6 @@ footer ul li a img {
   color: red;
   text-decoration: none;
 }
+.hide_desc {
+  display: none;
+}

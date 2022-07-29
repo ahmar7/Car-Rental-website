@@ -1,124 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Welcome</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <img src="./images/logo.png" alt="">
-            <ul>
-                <li><a href="welcome.html">Welcome</a></li>
-                <li><a href="economy.html">Economy</a></li>
-                <li><a href="sports.html">Sports & Luxury</a></li>
-                <li><a href="all.html">All Cars</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="logout.html">Logout</a></li>
-            </ul>
-            
-        </header>
-        <div class="content">
-            <div class="sports">
-                <div class="cars">
-                    <form action="#!" onsubmit="event.preventDefault();" method="post">
-                        <input type="text" id="search" placeholder="Search"> <br><br>
-                        <input type="submit" onclick="searchFilter()" value="Search">
-                    </form>
-                    <div class="car">
-                        <a href="./images/Lambo Hurracan.jpg"><img src="./images/Lambo Hurracan.jpg" alt=""></a>
-                        <h3>Lambo Hurracan</h3>
-                        <p>
-                            Year: 2022 <br />
-                            Body: Coupe <br />
-                            Horsepower: 623hp <br />
-                            0-60: 3.2s <br />
-                            Price per day: $1200 <br />
-                        </p>
-                    </div>
-                    <div class="car">
-                        <a href="./images/Ferrari Pista.jpg"><img src="./images/Ferrari Pista.jpg" alt=""></a>
-                        
-                        <h3>Ferrari Pista</h3>
-                        <p>
-                            Year: 2022 <br />
-                            Body: Coupe <br />
-                            Horsepower: 711hp <br />
-                            0-60: 2.7s <br />
-                            Price per day: $1750 <br />
-                        </p>
-                    </div>
-                    <div class="car">
-                        <a href="./images/Mercedes S-Class.jpg"><img src="./images/Mercedes S-Class.jpg" alt=""></a>
-                        <h3>Mercedes S Class</h3>
-                        <p>
-                            Year: 2022 <br />
-                            Body: Sedan <br />
-                            Horsepower: 435hp <br />
-                            0-60: 4.9s <br />
-                            Price per day: $800 <br />
-                        </p>
-                    </div>
-                    <div class="car">
-                        <a href="./images/RollsRoyce Cullinan.jpg"><img src="./images/RollsRoyce Cullinan.jpg" alt=""></a>
-                        <h3>RollsRoyce Cullinan</h3>
-                        <p>
-                            Year: 2022 <br />
-                            Body: SUV <br />
-                            Horsepower: 563hp <br />
-                            0-60: 4.4 <br />
-                            Price per day: $1350 <br />
-                        </p>
-                    </div>
-
-                </div>
+      <header>
+        <img src="./images/logo.png" alt="" />
+        <ul>
+          <li><a href="welcome.html">Welcome</a></li>
+          <li><a href="economy.html">Economy</a></li>
+          <li><a href="sports.html">Sports & Luxury</a></li>
+          <li><a href="all.html">All Cars</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="sports">
+          <div class="cars">
+            <form action="#!" onsubmit="event.preventDefault();" method="post">
+              <input type="text" id="search" placeholder="Search" />
+              <br /><br />
+              <input type="submit" onclick="searchFilter()" value="Search" />
+            </form>
+            <div class="car">
+              <a href="./images/Lambo Hurracan.jpg"
+                ><img src="./images/Lambo Hurracan.jpg" alt=""
+              /></a>
+              <h3>Lambo Hurracan</h3>
+              <p id="desc" class="hide_desc">
+                Year: 2022 <br />
+                Body: Coupe <br />
+                Horsepower: 623hp <br />
+                0-60: 3.2s <br />
+                Price per day: $1200 <br />
+              </p>
             </div>
+            <div class="car">
+              <a href="./images/Ferrari Pista.jpg"
+                ><img src="./images/Ferrari Pista.jpg" alt=""
+              /></a>
+
+              <h3>Ferrari Pista</h3>
+              <p id="desc1" class="hide_desc">
+                Year: 2022 <br />
+                Body: Coupe <br />
+                Horsepower: 711hp <br />
+                0-60: 2.7s <br />
+                Price per day: $1750 <br />
+              </p>
+            </div>
+            <div class="car">
+              <a href="./images/Mercedes S-Class.jpg"
+                ><img src="./images/Mercedes S-Class.jpg" alt=""
+              /></a>
+              <h3>Mercedes S Class</h3>
+              <p id="desc2" class="hide_desc">
+                Year: 2022 <br />
+                Body: Sedan <br />
+                Horsepower: 435hp <br />
+                0-60: 4.9s <br />
+                Price per day: $800 <br />
+              </p>
+            </div>
+            <div class="car">
+              <a href="./images/RollsRoyce Cullinan.jpg"
+                ><img src="./images/RollsRoyce Cullinan.jpg" alt=""
+              /></a>
+              <h3>RollsRoyce Cullinan</h3>
+              <p id="desc3" class="hide_desc">
+                Year: 2022 <br />
+                Body: SUV <br />
+                Horsepower: 563hp <br />
+                0-60: 4.4 <br />
+                Price per day: $1350 <br />
+              </p>
+            </div>
+          </div>
         </div>
-        <footer>
-            <ul>
-                <li><a href="#!"><img src="./images/fb.png" alt=""></a></li>
-                <li><a href="#!"><img src="./images/insta.png" alt=""></a></li>
-                <li><a href="#!"><img src="./images/twiter.png" alt=""></a></li>
-                <li><a href="#!"><img src="./images/youtube.png" alt=""></a></li>
-            </ul>
-        </footer>
+      </div>
+      <footer>
+        <ul>
+          <li
+            ><a href="#!"><img src="./images/fb.png" alt="" /></a
+          ></li>
+          <li
+            ><a href="#!"><img src="./images/insta.png" alt="" /></a
+          ></li>
+          <li
+            ><a href="#!"><img src="./images/twiter.png" alt="" /></a
+          ></li>
+          <li
+            ><a href="#!"><img src="./images/youtube.png" alt="" /></a
+          ></li>
+        </ul>
+      </footer>
     </div>
-
-<script>
-    function searchFilter() {
-        var search = document.getElementById("search").value;
-        //filter the cars based on the search 
-        if(search == ""){
-            //if the search is empty, show all the cars
-            var cars = document.getElementsByClassName("car");
-            for(var i = 0; i < cars.length; i++){
-                cars[i].style.display = "block";
-            }
-        }else{
-            //get the cars
-            var cars = document.getElementsByClassName("car");
-            //loop through the cars
-            for(var i = 0; i < cars.length; i++){
-                //get the car
-                var car = cars[i];
-                //get the car's text
-                var text = car.innerText;
-                //check if the search is in the text
-                if(text.indexOf(search) == -1){
-                    //if not, hide the car
-                    car.style.display = "none";
-                }else{
-                    //if yes, show the car
-                    car.style.display = "block";
-                }
-            }
-
-        }
-
-    }
-</script>
-</body>
+ <script src="./app.js"></script>
+    
+  </body>
 </html>
